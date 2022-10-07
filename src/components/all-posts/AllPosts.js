@@ -1,8 +1,6 @@
-// src/components/AllPosts.js
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
+import sanityClient from "../../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
@@ -40,7 +38,7 @@ export default function AllPosts() {
           allPostsData.map((post, index) => (
             <Link to={"/" + post.slug.current} key={post.slug.current}>
               <span key={index}>
-                
+
                 <img src={urlFor(post.mainImage.asset.url).width(200).url()} alt="" />
                 <span>
                   <h2>{post.title}</h2>
