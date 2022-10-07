@@ -37,7 +37,7 @@ export const HeroImage = styled.img`
   justify-content: center;
   align-items: center;
   margin: auto;
-
+  margin-top: -80px;
 `;
 
 export const BlogCardsContainer = styled.div`
