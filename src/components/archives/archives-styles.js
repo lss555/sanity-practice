@@ -1,66 +1,40 @@
-// import styled from 'styled-components';
-// import { Link } from "react-router-dom";
-//
-// // export const ArchivesContainer = styled.div`
-// //   margin-top: 10rem;
-// // `;
-//
-// export const ArchivesContainer = styled.div`
-//   -webkit-column-count: 3;
-//   -moz-column-count: 3;
-//   column-count: 3;
-//   -webkit-column-width: 33%;
-//   -moz-column-width: 33%;
-//   column-width: 33%;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 100%;
-//   @media screen and (max-width: 991px) {
-//     -webkit-column-count: 2;
-//     -moz-column-count: 2;
-//     column-count: 2;
-//  }
-//  @media screen and (max-width: 480px) {
-//    -webkit-column-count: 1;
-//    -moz-column-count: 1;
-//    column-count: 1;
-//    -webkit-column-width: 100%;
-//    -moz-column-width: 100%;
-//    column-width: 100%;
-// }
-// `;
-//
-// export const ArchivesCardsContainer = styled.div`
-//   -webkit-transition: all 350ms ease;
-//   transition: all 350ms ease;
-//   cursor: pointer;
-//   margin-bottom: 12px;
-//   text-decoration: none;
-//   position: relative;
-//   &:hover {
-//     filter: opacity(.7);
-//   }
-// `;
-//
-// export const ArchivesCards = styled.img`
-//   width: 100%;
-// `;
-//
-// export const ArchivesCardTitle = styled.h2`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width:100%;
-//   height:100%;
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-//   margin: auto;
-// `;
-//
-// export const ArchivesBlogLink = styled(Link)`
-//   text-decoration: none;
-//   color: black;
-// `;
+import styled from 'styled-components';
+import { Link } from "react-router-dom";
+
+export const ArchivesHeader = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  margin: 2rem auto 1rem 2rem;
+
+`;
+
+export const HomeLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  margin: 2rem 2rem 1rem auto;
+  text-decoration: none;
+  padding: .5rem;
+  color: black;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 25px;
+  :hover {
+    border: 1px solid black;
+  }
+`;
+
+export const ArchivesHeaderLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  margin: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-top: 1px solid black;
+`;

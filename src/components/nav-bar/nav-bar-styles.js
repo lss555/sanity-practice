@@ -25,6 +25,9 @@ export const NavTitle = styled(LinkR)`
   font-weight: bold;
   align-items: center;
   font-size: 32px;
+  :hover {
+    color: #910d0d;
+  }
 `;
 
 export const NavItem = styled(LinkR)`
@@ -36,6 +39,9 @@ export const NavItem = styled(LinkR)`
   justify-content: center;
   text-align: center;
   text-decoration: none;
+  :hover {
+    color: #910d0d;
+  }
 `;
 export const OuterNavItem = styled.a`
   color: black;
@@ -46,6 +52,9 @@ export const OuterNavItem = styled.a`
   justify-content: center;
   text-align: center;
   text-decoration: none;
+  :hover {
+    color: #910d0d;
+  }
 `;
 
 export const NavRightContainer = styled.h3`
