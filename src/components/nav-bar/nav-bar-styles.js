@@ -12,7 +12,7 @@ export const NavContainer = styled.div`
   background-color: rgba(0,0,0,0.0);
 `;
 
-export const NavTitle = styled.h1`
+export const NavTitle = styled(LinkR)`
   color: black;
   height: 80px;
   display: flex;
@@ -21,9 +21,23 @@ export const NavTitle = styled.h1`
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  font-size: 32px;
 `;
 
 export const NavItem = styled(LinkR)`
+  color: black;
+  display: flex;
+  z-index: 100;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+`;
+export const OuterNavItem = styled.a`
   color: black;
   display: flex;
   z-index: 100;

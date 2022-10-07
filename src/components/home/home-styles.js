@@ -13,8 +13,6 @@ export const GalleryContainer = styled.div`
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   column-width: 33%;
-  
-  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -56,7 +54,6 @@ export const BlogCardsContainer = styled.div`
 
 export const BlogCards = styled.img`
   width: 100%;
-
 `;
 
 export const BlogCardTitle = styled.h2`
@@ -69,5 +66,6 @@ export const BlogCardTitle = styled.h2`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+  text-align: center;
+  margin: auto;
 `;

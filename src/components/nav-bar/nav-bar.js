@@ -1,15 +1,15 @@
 import React from "react";
-import { NavContainer, NavTitle, NavItem, NavRightContainer, NavLeftContainer } from './nav-bar-styles.js'
+import { NavContainer, NavTitle, NavItem, NavRightContainer, NavLeftContainer, OuterNavItem } from './nav-bar-styles.js'
 
 const NavBar = () => {
 
   return (
   <NavContainer>
     <NavLeftContainer>
-      <NavItem to='/'>Insta</NavItem>
-      <NavItem to='/'>Twitter</NavItem>
+      <OuterNavItem target="_blank" href='https://www.instagram.com/'>Instagram</OuterNavItem>
+      <OuterNavItem target="_blank" href='https://twitter.com/?lang=en'>Twitter</OuterNavItem>
     </NavLeftContainer>
-    <NavTitle>Shred Mtns</NavTitle>
+    <NavTitle to='/'>Shred Mtns</NavTitle>
     <NavRightContainer>
       <NavItem to='/'>Archives</NavItem>
       <NavItem to='/'>About</NavItem>
