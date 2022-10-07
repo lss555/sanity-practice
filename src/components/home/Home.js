@@ -30,7 +30,7 @@ const Home = () => {
       .catch(console.error);
   }, []);
 
-// <BlogCardTitle>{post.title}</BlogCardTitle>
+
 
   return (
     <>

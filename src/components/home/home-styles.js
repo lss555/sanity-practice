@@ -13,8 +13,11 @@ export const GalleryContainer = styled.div`
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   column-width: 33%;
-  padding: 0 12px;
+  
   margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   @media screen and (max-width: 991px) {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -36,8 +39,7 @@ export const HeroImage = styled.img`
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-top: -80px;
+  margin: -80px 0 12px 0;
 `;
 
 export const BlogCardsContainer = styled.div`
