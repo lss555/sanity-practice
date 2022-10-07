@@ -11,7 +11,7 @@ const NavBar = () => {
     </NavLeftContainer>
     <NavTitle to='/'>Shred Mtns</NavTitle>
     <NavRightContainer>
-      <NavItem to='/'>Archives</NavItem>
+      <NavItem to='/archives'>Archives</NavItem>
       <NavItem to='/'>About</NavItem>
     </NavRightContainer>
   </NavContainer>
