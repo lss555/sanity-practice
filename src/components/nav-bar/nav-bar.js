@@ -12,7 +12,7 @@ const NavBar = () => {
     <NavTitle to='/'>Shred Mtns</NavTitle>
     <NavRightContainer>
       <NavItem to='/archives'>Archives</NavItem>
-      <NavItem to='/'>About</NavItem>
+      <NavItem to='/about'>About</NavItem>
     </NavRightContainer>
   </NavContainer>
   )

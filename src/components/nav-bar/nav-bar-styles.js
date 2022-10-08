@@ -10,6 +10,7 @@ export const NavContainer = styled.div`
   width: 100%;
   margin-top: 0;
   background-color: rgba(0,0,0,0.0);
+  position: sticky;
 `;
 
 export const NavTitle = styled(LinkR)`
