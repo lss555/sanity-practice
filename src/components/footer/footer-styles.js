@@ -12,12 +12,14 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterRight = styled.div`
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const FooterLeft = styled.div`
+  width: 50%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -26,6 +28,11 @@ export const FooterLeft = styled.div`
 `;
 
 export const FooterInnerLink = styled(LinkR)`
+  text-decoration: none;
+  color: black;
+  margin: 2rem;
+`;
+export const FooterOuterLink = styled.a`
   text-decoration: none;
   color: black;
   margin: 2rem;

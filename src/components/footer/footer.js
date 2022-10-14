@@ -1,24 +1,27 @@
 import React from 'react';
-import { FooterContainer, FooterInnerLink, FooterRight, FooterLeft } from './footer-styles.js'
+import { FooterContainer, FooterInnerLink, FooterRight, FooterLeft, FooterOuterLink } from './footer-styles.js'
 
 const Footer = () => {
 
   return (
     <FooterContainer>
       <FooterLeft>
-        <FooterInnerLink>
-          Footer link
-        </FooterInnerLink>
-        <FooterInnerLink>
-          Footer link
-        </FooterInnerLink>
+        <FooterOuterLink target="_blank" href='https://www.instagram.com/'>
+          Instagram
+        </FooterOuterLink>
+        <FooterOuterLink target="_blank" href='https://twitter.com/?lang=en'>
+          Twitter
+        </FooterOuterLink>
       </FooterLeft>
       <FooterRight>
-        <FooterInnerLink>
-          Footer link
+        <FooterInnerLink to='/archives'>
+          Archives
         </FooterInnerLink>
-        <FooterInnerLink>
-          Footer link
+        <FooterInnerLink to='/about'>
+          About
+        </FooterInnerLink>
+        <FooterInnerLink to='/'>
+          Shred Mtns
         </FooterInnerLink>
       </FooterRight>
     </FooterContainer>

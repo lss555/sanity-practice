@@ -7,6 +7,7 @@ export const BlogLink = styled(Link)`
 `;
 
 export const GalleryContainer = styled.div`
+  max-width: 2000px;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;

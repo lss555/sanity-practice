@@ -28,6 +28,7 @@ export const HomeLink = styled(Link)`
 `;
 
 export const ArchivesHeaderLinks = styled.div`
+  
   display: flex;
   align-items: center;
   justify-content: flex-end;
