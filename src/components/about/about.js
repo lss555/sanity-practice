@@ -7,7 +7,7 @@ const About = () => {
   <AboutContainer>
     <TopHalf>
     <TopHalfTitle>The Shred Mtns Story</TopHalfTitle>
-    <TopHalfSubTitle>By Joe Dirt</TopHalfSubTitle>
+    <TopHalfSubTitle>By Joe Dirt 5000</TopHalfSubTitle>
     </TopHalf>
     <AboutBody>Lorem ipsum dolor sit amet. Eos corporis voluptates et culpa voluptatem ex quaerat molestiae. At perferendis necessitatibus sed recusandae nemo rem error quibusdam. Rem dolorem velit sit pariatur omnis est sint totam sed fugit explicabo hic fuga aspernatur ea molestiae dolorem eos eveniet possimus!</AboutBody>
 
