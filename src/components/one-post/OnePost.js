@@ -1,5 +1,5 @@
 // src/components/OnePost.js
-
+import { OnePostContainer, IntroContainer, TextContainer, ProfilePicture, BlogTitle, ProfileContainer, ContentPicture } from './one-post-styles.js';
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../../client.js";
@@ -40,25 +40,25 @@ export default function OnePost() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-    <div>
-      <div>
-        <h2>{postData.title}</h2>
-        <div>
-          <img
+    <OnePostContainer>
+      <IntroContainer>
+        <BlogTitle>{postData.title}</BlogTitle>
+        <ProfileContainer>
+          <ProfilePicture
             src={urlFor(postData.authorImage).width(100).url()}
             alt="Author is cap"
           />
-          <h4>{postData.name}</h4>
-        </div>
-      </div>
-      <img src={urlFor(postData.mainImage).width(200).url()} alt="" />
-      <div>
+          <h4>Written by:<br /> {postData.name}</h4>
+        </ProfileContainer>
+      </IntroContainer>
+      <TextContainer>
         <BlockContent
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}
           dataset={sanityClient.clientConfig.dataset}
         />
-      </div>
-    </div>
+      </TextContainer>
+      <ContentPicture src={urlFor(postData.mainImage).url()} alt="" />
+    </OnePostContainer>
   );
 }

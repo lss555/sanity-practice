@@ -26,6 +26,7 @@ export const NavTitle = styled(LinkR)`
   font-weight: bold;
   align-items: center;
   font-size: 32px;
+  border-bottom: 1px solid black;
   :hover {
     color: #910d0d;
   }
