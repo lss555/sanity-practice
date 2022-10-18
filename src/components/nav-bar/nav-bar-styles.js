@@ -31,8 +31,35 @@ export const NavTitle = styled(LinkR)`
     color: #910d0d;
   }
   @media screen and (max-width: 812px) {
-    
+    margin-left: 1rem;
+    padding: 0;
+    justify-content: flex-start;
+    text-align: flex-start;
+    font-size: 22px;
+    border-bottom: none;
+    width: 40%;
  }
+`;
+
+export const NavTitleContainer = styled.div`
+  margin: auto;
+  @media screen and (max-width: 812px) {
+    width: 100%;
+ }
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 812px) {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    transfrom: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: black;
+  }
 `;
 
 export const NavItem = styled(LinkR)`
@@ -47,6 +74,9 @@ export const NavItem = styled(LinkR)`
   :hover {
     color: #910d0d;
   }
+  @media screen and (max-width: 812px) {
+    display: none;  
+ }
 `;
 export const OuterNavItem = styled.a`
   color: black;
@@ -60,6 +90,9 @@ export const OuterNavItem = styled.a`
   :hover {
     color: #910d0d;
   }
+  @media screen and (max-width: 812px) {
+    display: none;  
+ }
 `;
 
 export const NavRightContainer = styled.h3`

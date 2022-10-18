@@ -45,6 +45,11 @@ export const TextContainer = styled.div`
 	margin: 3rem auto 3rem auto;
 	width: 60%;
 	height: 100%;
+	@media screen and (max-width: 812px) {
+		width: 90%;
+    	margin-right: auto;
+    	margin-left: auto;
+ }
 
 `;
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { HeroImage } from './home-styles.js';
-import HomeImage from '../images/home.jpg';
+import { HeroImage, HeroContainer } from './home-styles.js';
+import HomeImage from '../images/heroImg.jpg';
 import Gallery from '../gallery/gallery.js';
 
 const Home = () => {
@@ -9,7 +9,9 @@ const Home = () => {
 
   return (
     <>
-      <HeroImage src={HomeImage}/>
+      <HeroContainer>
+        <HeroImage src={HomeImage}/>
+      </HeroContainer>
       <Gallery />
     </>
   );

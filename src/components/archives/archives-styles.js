@@ -7,7 +7,9 @@ export const ArchivesHeader = styled.h1`
   justify-content: start;
   text-align: center;
   margin: 2rem auto 1rem 2rem;
-
+  @media screen and (max-width: 812px) {
+    margin: auto;
+  }
 `;
 
 export const HomeLink = styled(Link)`
