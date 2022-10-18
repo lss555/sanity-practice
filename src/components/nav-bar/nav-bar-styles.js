@@ -30,6 +30,9 @@ export const NavTitle = styled(LinkR)`
   :hover {
     color: #910d0d;
   }
+  @media screen and (max-width: 812px) {
+    
+ }
 `;
 
 export const NavItem = styled(LinkR)`

@@ -42,8 +42,8 @@ export const AboutBody = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 `;
 
 export const AuthorPicture = styled.img`

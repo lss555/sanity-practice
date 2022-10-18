@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterContainer, FooterInnerLink, FooterRight, FooterLeft, FooterOuterLink } from './footer-styles.js'
+import { FooterContainer, FooterInnerLink, FooterRight, FooterLeft, FooterOuterLink, FooterInnerLinkLogo } from './footer-styles.js'
 
 const Footer = () => {
 
@@ -20,9 +20,9 @@ const Footer = () => {
         <FooterInnerLink to='/about'>
           About
         </FooterInnerLink>
-        <FooterInnerLink to='/'>
+        <FooterInnerLinkLogo to='/'>
           Shred Mtns
-        </FooterInnerLink>
+        </FooterInnerLinkLogo>
       </FooterRight>
     </FooterContainer>
   )

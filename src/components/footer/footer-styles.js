@@ -9,6 +9,10 @@ export const FooterContainer = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    padding-top: 1rem;
+ }
 `;
 
 export const FooterRight = styled.div`
@@ -16,6 +20,12 @@ export const FooterRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 `;
 
 export const FooterLeft = styled.div`
@@ -25,15 +35,51 @@ export const FooterLeft = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ }
+
 `;
 
 export const FooterInnerLink = styled(LinkR)`
   text-decoration: none;
   color: black;
   margin: 2rem;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    margin: .5rem auto .5rem auto;
+ }
+ :hover {
+    color: #910d0d;
+  }
 `;
+
+export const FooterInnerLinkLogo = styled(LinkR)`
+  text-decoration: none;
+  color: black;
+  margin: 2rem;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    margin: .5rem auto 1rem auto;
+    font-weight: bold;
+ }
+ :hover {
+    color: #910d0d;
+  }
+`;
+
 export const FooterOuterLink = styled.a`
   text-decoration: none;
   color: black;
   margin: 2rem;
+  @media screen and (max-width: 868px) {
+    flex-direction: column;
+    margin: .5rem auto .5rem auto;
+ }
+ :hover {
+    color: #910d0d;
+  }
 `;

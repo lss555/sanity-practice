@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const OnePostContainer = styled.div`
 	display: flex;
@@ -32,7 +33,10 @@ export const ContentContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-	
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -69,4 +73,14 @@ export const ProfileContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+`;
+
+export const AuthorText = styled(LinkR)`
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+	:hover {
+    color: #910d0d;
+  }
 `;

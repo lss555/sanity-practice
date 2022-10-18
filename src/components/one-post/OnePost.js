@@ -1,5 +1,5 @@
 // src/components/OnePost.js
-import { OnePostContainer, IntroContainer, ContentContainer, TextContainer, ProfilePicture, BlogTitle, ProfileContainer, ContentPicture } from './one-post-styles.js';
+import { OnePostContainer, IntroContainer, TextContainer, ProfilePicture, BlogTitle, ProfileContainer, ContentPicture, AuthorText } from './one-post-styles.js';
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../../client.js";
@@ -48,7 +48,7 @@ export default function OnePost() {
             src={urlFor(postData.authorImage).width(100).url()}
             alt="Author is cap"
           />
-          <h4>Written by:<br /> {postData.name}</h4>
+          <AuthorText to="/about">Written by:<br /> {postData.name}</AuthorText>
         </ProfileContainer>
       </IntroContainer>
       <TextContainer>
