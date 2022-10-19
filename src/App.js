@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import OnePost from "./components/one-post/OnePost.js";
 import Home from "./components/home/Home.js";
@@ -18,7 +18,7 @@ const [isOpen, setIsOpen] = useState(false);
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <SideBar isOpen={isOpen} toggle={toggle}/>
     <NavBar toggle={toggle}/>
       <Routes>
@@ -28,7 +28,7 @@ const [isOpen, setIsOpen] = useState(false);
         <Route element={<OnePost />} path="/:slug" />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
