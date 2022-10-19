@@ -10,7 +10,6 @@ import Archives from "./components/archives/archives.js";
 import About from "./components/about/about.js";
 
 function App() {
-
 const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {

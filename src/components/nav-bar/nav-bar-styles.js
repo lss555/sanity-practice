@@ -27,9 +27,12 @@ export const NavTitle = styled(LinkR)`
   align-items: center;
   font-size: 32px;
   border-bottom: 1px solid black;
-  :hover {
+  @media screen and (min-width: 812px) {
+    :hover {
     color: #910d0d;
   }
+ }
+  
   @media screen and (max-width: 812px) {
     margin-left: 1rem;
     padding: 0;

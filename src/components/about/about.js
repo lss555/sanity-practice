@@ -1,8 +1,9 @@
-import { AboutContainer, TopHalf, TopHalfTitle, TopHalfSubTitle, AboutBody, AuthorPicture, BottomHalf, AuthorContainer } from './about-styles.js';
+import { AboutContainer, TopHalf, TopHalfTitle, TopHalfSubTitle, AboutBody, AuthorPicture, BottomHalf, AuthorContainer, LoadingContainer } from './about-styles.js';
 import React, { useEffect, useState } from "react";
 import sanityClient from "../../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import RingLoader from "react-spinners/RingLoader";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -10,9 +11,11 @@ function urlFor(source) {
 };
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [aboutData, setAboutData] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true);
     sanityClient
       .fetch(
         `*[_type == "author"]{
@@ -28,6 +31,7 @@ const About = () => {
        }`
       )
       .then((data) => setAboutData(data))
+      .then(setIsLoading(false))
       .catch(console.error);
   }, []);
 
@@ -36,7 +40,13 @@ const About = () => {
   if (!aboutData) return <div>Loading...</div>;
 
   return (
-    <AboutContainer>
+    <>
+      {isLoading ? (
+        <LoadingContainer>
+          <RingLoader />
+        </LoadingContainer>
+        ) : (
+          <AboutContainer>
       <TopHalfTitle>Authors</TopHalfTitle>
       {aboutData.map((author, index) => (
         <AuthorContainer key={author.slug.current}>
@@ -54,8 +64,11 @@ const About = () => {
             </AboutBody>
           </BottomHalf>
         </AuthorContainer>
-      ))}  
-    </AboutContainer>
+      ))}
+      </AboutContainer>
+        )}
+
+    </>
   );
 };
 

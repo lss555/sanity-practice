@@ -61,3 +61,18 @@ export const BlogCardTitle = styled.h2`
   text-align: center;
   margin: auto;
 `;
+
+export const LoaderContainer = styled.div`
+  background-color: white;
+  z-index: 10001;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;

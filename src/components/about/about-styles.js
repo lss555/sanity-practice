@@ -62,3 +62,18 @@ export const AuthorContainer = styled.div`
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 `;
+
+export const LoadingContainer = styled.div`
+  background-color: white;
+  z-index: 10001;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;
