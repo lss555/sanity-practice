@@ -14,7 +14,6 @@ const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen)
-    console.log('toggled', isOpen)
   };
 
   return (
